@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ChckOtPg.css">
+    <title>RRshoe Store</title>
+</head>
+
+<body>
+    <header>
+        <h1>RRshoe Store</h1>
+        <h2>CheckOut</h2>
+    </header>
+
+
+    <main>
+
+        <section class="Product-Container">
+          <h2>Produk</h2>
+          <img id="product-image">
+          <h3 id="product-name"></h3>
+          <p id="product-price">Jumlah : </p>
+          <button id="increase">+</button>
+          <span id="quantity"></span>
+          <button id="decrease">-</button>
+        </section>
+
+
+
+        <section class="Address-Container">
+          <h2>Alamat Pengiriman</h2>
+          <label for="Nama">Nama</label>
+          <input type="text" id="Nama">
+
+          <label for="Alamat">Alamat</label>
+          <input type="text" id="Alamat">
+
+          <label for="Kota">Kota</label>
+          <input type="text" id="Kota">
+
+          <label for="NoTelepon">No.Telepon</label>
+          <input type="text" id="NoTelepon">
+        </section>
+
+
+
+        <section class="Total-Container">
+            <h2>Total Pembayaran</h2>
+            <p id="PriceTotalProduct">Harga Total Product: </p>
+            <p id="Ongkir">Ongkir: </p>
+            <p id="TotalPrice">Total: </p>
+        </section>
+
+
+        <section class="Methods-Payment">
+            <h2>Metode Pembayaran</h2>
+            <label for="QRIS">QRIS</label>
+            <input type="radio" id="QRIS">
+
+            <label for="TransferBank">Transfer Bank</label>
+            <input type="radio" id="TransferBank">
+
+            <label for="COD">COD</label>
+            <input type="radio" id="COD">
+
+            <label for="EWallet">E-Wallet</label>
+            <input type="radio" id="EWallet">
+            <button>Bayar</button>
+        </section>
+   
+    </main>
+    <script src="ChckOtPg.js"></script>
+</body>
+</html>
